@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mouse',
+  selector: 'angular',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
+
 export class AppComponent  {
   screenX = 0;
   screenY = 0;
@@ -15,8 +16,7 @@ export class AppComponent  {
   offsetX = 0;
   offsetY = 0;
 
-  //領域内でマウスポインターを動かした時その座標を表示
-  show(e: any) {
+  show(e : any) {
     this.screenX = e.screenX;
     this.screenY = e.screenY;
     this.pageX = e.pageX;
